@@ -1,0 +1,25 @@
+{
+    "name": "jaguarsoft/laravel-debugbar",
+    "description": "Handle Debugbar Enabling by Middleware",
+    "keywords": ["barryvdh", "laravel", "debugbar", "jaguarsoft"],    
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Laurence",
+            "email": "laurence@jaguarsoft.pe"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "JaguarSoft\\LaravelDebugbar\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^5.3.9 || ^7.0 || ^8.0"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "5.2.x-dev"
+        }
+    }
+}
