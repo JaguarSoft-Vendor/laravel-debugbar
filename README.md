@@ -31,3 +31,4 @@ public function handle($request, Closure $next){
 }
 ```
 
+Used and Tested in Laravel 5.2, 5.3
