@@ -10,13 +10,13 @@ DEBUGBAR_ENABLED=false
 
 ```php
 'providers' => [   
-	/** **/ 
-	// Barryvdh\Debugbar\ServiceProvider::class,
+    /** **/ 
+    // Barryvdh\Debugbar\ServiceProvider::class,
     JaguarSoft\LaravelDebugbar\Provider\DebugbarServiceProvider::class,
 ],
 'aliases' => [
     /** **/
-	'Debugbar' => Barryvdh\Debugbar\Facade::class,
+    'Debugbar' => Barryvdh\Debugbar\Facade::class,
 ],
 ```
 
@@ -24,10 +24,10 @@ DEBUGBAR_ENABLED=false
 
 ```php
 public function handle($request, Closure $next){
-	if(/* your validation*/){
-		\Debugbar::enable();
-	}
-	return $next($request);
+    if(/* your validation*/){
+        \Debugbar::enable();
+    }
+    return $next($request);
 }
 ```
 
