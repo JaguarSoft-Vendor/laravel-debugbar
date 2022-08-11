@@ -2,9 +2,13 @@
 
 This package allows you to enable the Debugbar on deman, despite being disabled by configuration.
 
-```ini
-DEBUGBAR_ENABLED=false
+## Installation
+
+```bash
+composer require jaguarsoft/laravel-debugbar
 ```
+
+## Configuration
 
 **config/app.php**
 
@@ -20,7 +24,22 @@ DEBUGBAR_ENABLED=false
 ],
 ```
 
-**Middleware**
+## Use
+
+**To load Enabled for All**
+```ini
+DEBUGBAR_ENABLED=true
+```
+**To load Disable for All, enabled after in a Middleware**
+```ini
+DEBUGBAR_ENABLED=false
+```
+**To load Enabled when** `APP_DEBUG=true`
+```ini
+DEBUGBAR_ENABLED=null
+```
+
+### Middleware
 
 ```php
 public function handle($request, Closure $next){
@@ -31,4 +50,7 @@ public function handle($request, Closure $next){
 }
 ```
 
-Used and Tested in Laravel 5.2, 5.3
+**Example Middleware:** [https://gist.github.com/laurenceHR/911050c675eb5a1d28b761b61b3b25a0
+](https://gist.github.com/laurenceHR/911050c675eb5a1d28b761b61b3b25a0)
+
+_Used and Tested in Laravel 5.2, 5.3_
