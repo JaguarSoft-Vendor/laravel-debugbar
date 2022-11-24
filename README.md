@@ -53,4 +53,5 @@ public function handle($request, Closure $next){
 **Example Middleware:** [https://gist.github.com/laurenceHR/911050c675eb5a1d28b761b61b3b25a0
 ](https://gist.github.com/laurenceHR/911050c675eb5a1d28b761b61b3b25a0)
 
-_Used and Tested in Laravel 5.2, 5.3_
+Used and Tested in Laravel 5.2, 5.3, 5.4
+Is not necessary in Laravel 5.5 because with "barryvdh/laravel-debugbar" version "~3.4.2" has this feature included.
